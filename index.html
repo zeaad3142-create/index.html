@@ -14,27 +14,38 @@ nav {
 	justify-content: center;
 	gap: 30px;
 	padding: 20px;
-	background: linear-gradient(180deg, #0a0a0a, #001a10);
+	background: rgba(10, 10, 10, 0.7);
+	backdrop-filter: blur(10px);
+	position: sticky;
+	top: 0;
+	z-index: 10;
 }
 
 nav a {
 	color: #00e676;
 	text-decoration: none;
 	font-weight: bold;
+	transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+	color: #ffffff;
+	transform: scale(1.1);
 }
 
 .container {
 	display: flex;
 	justify-content: center;
-	gap: 20px;
-	margin-top: 30px;
+	gap: 37px;
+	margin-top: 45px;
 	flex-wrap: wrap;
 }
 
 .stat {
-	background: #008080;
+	background: #ffffff;
+	color: #0a0a0a;
 	border-radius: 16px;
-	box-shadow: 0 4px 15px rgba(0, 230, 118, 0.2);
+	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
 	padding: 20px;
 	text-align: center;
 	transition: transform 0.3s, box-shadow 0.3s;
@@ -42,7 +53,7 @@ nav a {
 
 .stat:hover {
 	transform: translateY(-8px);
-	box-shadow: 0 8px 25px rgba(0, 230, 118, 0.35);
+	box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -54,8 +65,13 @@ body {
 	animation: fadeIn 1s ease;
 }
 
+.logo {
+	height: 55px;
+	margin-bottom: 10px;
+}
+
 .section-title {
-	margin-top: 70px;
+	margin-top: 55px;
 }
 
 h5 {
@@ -72,8 +88,8 @@ h1 {
 .review {
 	background: #111;
 	border-right: 3px solid #00e676;
-	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+	border-radius: 20px 20px 20px 4px;
+	box-shadow: 0 8px 20px rgba(0, 230, 100, 0.20);
 	padding: 18px;
 	width: 220px;
 	text-align: right;
@@ -84,14 +100,41 @@ h1 {
 	text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
 }
 
+.cta-btn {display: inline-block;
+background: #00e676;
+color: #0a0a0a;
+padding: 14px 35px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+margin-top: 20px;
+box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
+transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+
+}
+
+.cta-btn:hover {transform: scale(1.05);
+box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
+background: #ffffff;
+
+}
+
+
+
+
+
+
 @media (max-width: 480px) {
 	h1 { font-size: 40px; }
 	h5 { font-size: 14px; }
+	.logo { height: 40px; }
 }
 
 @keyframes fadeIn {
 	from { opacity: 0; transform: translateY(20px); }
 	to { opacity: 1; transform: translateY(0); }
+
 }
 
 </style>
@@ -105,9 +148,14 @@ h1 {
 <a href="pricing.html">الاسعار</a>
 </nav>
 
-<h1>DO2 <span class="highlight">مواقع احترافية</span></h1>
+<img src="https://i.ibb.co/Gf1L4Zm7/content.png" alt="DO2" class="logo">
+
+<h1><span class="highlight">مواقع احترافية</span></h1>
 
 <h5> ليش DO2 لاننا نقدم لك خدمات مقابل اسعار ترضيك ، التعاونية مع العميل اولاً🫱🏻‍🫲🏼</h5>
+
+<a href="https://wa.me/966540903064" class="cta-btn">ابدأ مشروعك الآن</a>
+
 
 <div class="container">
 	<div class="stat">
@@ -123,6 +171,7 @@ h1 {
 		<p>سنوات خبرة</p>
 	</div>
 </div>
+
 
 <h2 class="section-title">آراء عملائنا</h2>
 
@@ -140,6 +189,7 @@ h1 {
 		<p>- سعود </p>
 	</div>
 </div>
+
 
 </body>
 </html>
