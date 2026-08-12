@@ -19,6 +19,7 @@ nav {
 	position: sticky;
 	top: 0;
 	z-index: 10;
+
 }
 
 nav a {
@@ -26,11 +27,13 @@ nav a {
 	text-decoration: none;
 	font-weight: bold;
 	transition: color 0.3s, transform 0.3s;
+
 }
 
 nav a:hover {
 	color: #ffffff;
 	transform: scale(1.1);
+
 }
 
 .container {
@@ -39,6 +42,7 @@ nav a:hover {
 	gap: 20px;
 	margin-top: 30px;
 	flex-wrap: wrap;
+
 }
 
 .service {
@@ -49,11 +53,13 @@ nav a:hover {
 	width: 200px;
 	text-align: center;
 	transition: transform 0.3s, box-shadow 0.3s;
+
 }
 
 .service:hover {
 	transform: translateY(-8px);
 	box-shadow: 0 8px 25px rgba(0, 230, 118, 0.35);
+
 }
 
 body {
@@ -63,50 +69,153 @@ body {
 	font-family: 'Tajawal', sans-serif;
 	padding: 40px 20px;
 	animation: fadeIn 1s ease;
+
 }
 
 .logo {
 	height: 55px;
 	margin-bottom: 10px;
+
 }
 
 h5 {
 	color: #999;
 	max-width: 500px;
 	margin: 15px auto;
+
 }
 
 h1 {
 	color: #00e676;
 	font-size: 65px;
+
 }
 
 .highlight {
 	color: #00e676;
 	text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
-}
-
-
-.cta-btn {display: inline-block;
-background: #00e676;
-color: #0a0a0a;
-padding: 14px 35px;
-border-radius: 50px;
-text-decoration: none;
-font-weight: bold;
-font-size: 16px;
-margin-top: 20px;
-box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
-transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 
 }
 
-.cta-btn:hover {transform: scale(1.05);
-box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
-background: #ffffff;
+.cta-btn {
+	display: inline-block;
+	background: #00e676;
+	color: #0a0a0a;
+	padding: 14px 35px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 20px;
+	box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
+	transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 
 }
 
+.cta-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
+	background: #ffffff;
+
+}
+
+#contactForm {
+	max-width: 350px;
+	margin: 60px auto 0;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+
+}
+
+#contactForm input,
+#contactForm textarea {
+	background: #111;
+	border: 1px solid #333;
+	border-radius: 10px;
+	padding: 14px;
+	color: white;
+	font-family: 'Tajawal', sans-serif;
+	font-size: 15px;
+	outline: none;
+	transition: border-color 0.3s;
+
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+	border-color: #00e676;
+
+}
+
+#contactForm textarea {
+	min-height: 100px;
+	resize: vertical;
+
+}
+
+#contactForm button {
+	background: #00e676;
+	color: #0a0a0a;
+	border: none;
+	padding: 14px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	transition: transform 0.3s, background 0.3s;
+
+}
+
+#contactForm button:hover {
+	transform: scale(1.03);
+	background: #ffffff;
+
+}
+
+footer {
+	margin-top: 60px;
+	padding: 40px 20px 30px;
+	text-align: center;
+
+}
+
+.footer-btn {
+	display: block;
+	width: fit-content;
+	margin: 0 auto 15px;
+	background: #00e676;
+	color: #0a0a0a;
+	padding: 12px 30px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
+	transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.footer-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
+
+}
+
+footer p {
+	color: #666;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+hr {background: #111;
+	border-radius: 70px 70px 70px 3px;
+	box-shadow: 0 12px 20px rgba(0, 230, 100, 0.40);
+	padding: 14px;
+	width: 65px;
+	text-align: right;
+	
+}
 
 
 @media (max-width: 480px) {
@@ -118,45 +227,126 @@ background: #ffffff;
 @keyframes fadeIn {
 	from { opacity: 0; transform: translateY(20px); }
 	to { opacity: 1; transform: translateY(0); }
+
 }
 
 </style>
 </head>
 
-<body>
+<body> <!-- بداية المحتوى -->
 
-<nav>
+<nav> <!--بداية الروابط المحلية-->
 <a href="index.html"> الرئيسية</a>
 <a href="services.html">الخدمات</a>
 <a href="pricing.html">الاسعار</a>
-</nav>
+</nav><!--نهاية الروابط المحلية-->
 
+<!-- بداية روابط الصور -->
 <img src="https://i.ibb.co/Gf1L4Zm7/content.png" alt="DO2" class="logo">
+<!-- نهاية روابط الصور -->
 
+<!-- بداية عنوان h1 -->
 <h1><span class="highlight">خدماتنا</span></h1>
+<!-- نهاية العنوان h1 -->
 
+<!-- بداية العنوان h5 -->
 <h5>نقدم مواقع مخصصة لكل نوع نشاط تجاري، بأسلوب عصري يلائم علامتك</h5>
+<!-- نهاية العنوان h5 -->
 
+<!-- بداية الرابط الخارجي واتس -->
 <a href="https://wa.me/966540903064" class="cta-btn">ابدأ مشروعك الآن</a>
+<!-- نهاية الرابط الخارجي واتس -->
+ 
+    <!-- بداية صندوق الكروت -->
 
+<!-- بداية البطاقة  1 -->
 <div class="container">
 	<div class="service">
-		<h2>مطاعم🍔</h2>
-		<p> تصميم مواقع طلبات وقوائم الوجبات وربط مباشر بالواتساب لتسهيل الطلب</p>
-	</div>
-	<div class="service">
-		<h2>شركات🏢</h2>
-		<p>موقع تعريفي احترافي يعرض خدماتك وينقل صورة موثوقة لعملائك</p>
-	</div>
-	<div class="service">
+		
+	<!-- بداية العنوان h2 -->
+	 <h2>مطاعم🍔</h2>
+<!-- هاية العنوان h2 --> 
+
+<!-- بداية فقرة البطاقة 1 -->
+<p> تصميم مواقع طلبات وقوائم الوجبات وربط مباشر بالواتساب لتسهيل الطلب</p>
+<!--نهاية فقرة البطاقة 1-->
+
+</div>‎<!-- قفلة الكرت  1 -->
+
+<!-- بداية البطاقة 2 -->
+<div class="service">
+	
+	   <h2>شركات🏢</h2>
+		
+ <p>موقع تعريفي احترافي يعرض خدماتك وينقل صورة موثوقة لعملائك</p>
+	
+</div><!-- نهاية البطاقة 2-->
+	
+<!-- بداية الكرت رقم 3 -->
+<div class="service">
+		
 		<h2>محلات تجارية🛍️</h2>
-		<p> عرض منتجاتك بالصور والاسعار بشكل جذاب يشجع الزائر على الطلب</p>
-	</div>
+		
+	<p> عرض منتجاتك بالصور والاسعار بشكل جذاب يشجع الزائر على الطلب</p>
+
+</div><!-- نهاية الكرت رقم 3 -->
+	
+<!-- بداية الكرت رقم 4 -->	
 	<div class="service">
+		
 		<h2>صيدليات 💊</h2>
-		<p>عرض المنتجات المتوفرة وطريقة سهلة للتواصل والاستفسار عن الادوية</p>
-	</div>
+
+<p>عرض المنتجات المتوفرة وطريقة سهلة للتواصل والاستفسار عن الادوية</p>
+
+</div><!--نهاية الكرت رقم 4-->
+
 </div>
+<!-- نهاية صندوق الكروت -->
+<hr/>
+
+<!-- __________________________ -->
+
+<form id="contactForm">
+	
+	<input type="text" id="nameInput" placeholder="اسمك">
+	
+	<textarea id="messageInput" placeholder="رسالتك"> </textarea>
+	
+ <button type="button" onclick="sendMessage()">إرسال عبر واتساب</button>
+
+</form>
+
+<!-- __________________________ -->
+
+<footer>
+	
+	<a href="https://wa.me/966543443871" class="footer-btn">💬 تواصل عبر الواتساب</a>
+	
+	<a href="mailto:info@do2.com" class="footer-btn">📧 تواصل عبر الايميل</a>
+	
+ <p>جميع الحقوق محفوظة لدى DO2 © 2026</p>
+
+</footer>
+
+<!-- __________________________ -->
+
+<script>
+function sendMessage() {
+    let name = document.getElementById('nameInput').value;
+    let message = document.getElementById('messageInput').value;
+
+    if (name === "" || message === "") {
+        alert("الرجاء تعبئة جميع الحقول");
+        return;
+    }
+
+    let fullMessage = "الاسم: " + name + " - الرسالة: " + message;
+    let whatsappURL = "https://wa.me/966543443871?text=" + encodeURIComponent(fullMessage);
+
+    window.open(whatsappURL);
+}
+</script>
+<!-- __________________________ -->
 
 </body>
 </html>
