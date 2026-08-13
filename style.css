@@ -22,6 +22,13 @@ nav a:hover {
 	transform: scale(1.1);
 }
 
+nav a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #00e676;
+    padding-bottom: 4px;
+}
+
+
 body {
 	background: #0a0a0a;
 	color: white;
@@ -63,7 +70,27 @@ h5 {
 .highlight {
 	color: #00e676;
 	text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
+
 }
+
+.section-title {
+    margin-top: 55px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00e676, transparent);
+    border-radius: 10px;
+}
+
 
 /* بطاقات الإحصائيات (الرئيسية) */
 .stat {
