@@ -76,3 +76,17 @@ revealElements.forEach(function(el) {
 	el.classList.add('reveal');
 	observer.observe(el);
 });
+
+window.addEventListener('scroll', function() {
+    let backBtn = document.getElementById('backToTop');
+    if (window.scrollY > 400) {
+        backBtn.classList.add('show');
+    } else {
+        backBtn.classList.remove('show');
+    }
+});
+
+document.getElementById('backToTop').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

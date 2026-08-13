@@ -67,10 +67,10 @@ h5 {
 
 /* بطاقات الإحصائيات (الرئيسية) */
 .stat {
-	background: #ffffff‏;
-	color: #00e676;
+	background: #ffffff;
+	color: #0a0a0a;
 	border-radius: 16px;
-	box-shadow: 0 4px 15px rgba(255, 255, 255, 1);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 	padding: 20px;
 	text-align: center;
 	transition: transform 0.3s, box-shadow 0.3s;
@@ -78,7 +78,7 @@ h5 {
 
 .stat:hover {
 	transform: translateY(-8px);
-	box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* بطاقات آراء العملاء (الرئيسية) */
@@ -314,6 +314,19 @@ footer p {
 	visibility: hidden;
 }
 
+.back-top {
+    left: auto;
+    right: 25px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 @keyframes pulse {
 	0%, 100% { transform: scale(1); opacity: 1; }
 	50% { transform: scale(1.15); opacity: 0.6; }
@@ -323,7 +336,7 @@ footer p {
 @media (max-width: 480px) {
 	h1 { font-size: 40px; }
 	h5 { font-size: 14px; }
-	.logo { height: 180px; }
+	.logo { height: 60px; }
 }
 
 /* حركة الدخول */
