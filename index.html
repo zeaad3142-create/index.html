@@ -3,196 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DO2 - مواقع احترافية</title>
+
+<meta name="description" content="DO2 لتصميم المواقع الإلكترونية - نبني لك موقعك الاحترافي بسرعة وأسعار تناسبك، مع دعم كامل بعد التسليم">
+<meta name="keywords" content="تصميم مواقع, مواقع الكترونية, تصميم مواقع السعودية, DO2">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-nav {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	padding: 20px;
-	background: rgba(10, 10, 10, 0.7);
-	backdrop-filter: blur(10px);
-	position: sticky;
-	top: 0;
-	z-index: 10;
-}
-
-nav a {
-	color: #00e676;
-	text-decoration: none;
-	font-weight: bold;
-	transition: color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-	color: #ffffff;
-	transform: scale(1.1);
-}
-
-.container {
-	display: flex;
-	justify-content: center;
-	gap: 37px;
-	margin-top: 45px;
-	flex-wrap: wrap;
-}
-
-.stat {
-	background: #ffffff;
-	color: #0a0a0a;
-	border-radius: 16px;
-	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
-	padding: 20px;
-	text-align: center;
-	transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.stat:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
-}
-
-body {
-	background: #0a0a0a;
-	color: white;
-	text-align: center;
-	font-family: 'Tajawal', sans-serif;
-	padding: 40px 20px;
-	animation: fadeIn 1s ease;
-}
-
-.logo {
-	height: 55px;
-	margin-bottom: 10px;
-}
-
-.section-title {
-	margin-top: 55px;
-}
-
-h5 {
-	color: #999;
-	max-width: 500px;
-	margin: 15px auto;
-}
-
-h1 {
-	color: #00e676;
-	font-size: 65px;
-}
-
-.review {
-	background: #111;
-	border-right: 3px solid #00e676;
-	border-radius: 20px 20px 20px 4px;
-	box-shadow: 0 8px 20px rgba(0, 230, 100, 0.20);
-	padding: 18px;
-	width: 220px;
-	text-align: right;
-}
-
-.highlight {
-	color: #00e676;
-	text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
-}
-
-.cta-btn {
-	display: inline-block;
-	background: #00e676;
-	color: #0a0a0a;
-	padding: 14px 35px;
-	border-radius: 50px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 16px;
-	margin-top: 20px;
-	box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
-	transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-}
-
-.cta-btn:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
-	background: #ffffff;
-}
-
-.work-item {
-	background: #111;
-	border-radius: 16px;
-	overflow: hidden;
-	width: 220px;
-	box-shadow: 0 4px 15px rgba(0, 230, 118, 0.2);
-	transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.work-item:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 8px 25px rgba(0, 230, 118, 0.35);
-}
-
-.work-item img {
-	width: 100%;
-	height: 140px;
-	object-fit: cover;
-}
-
-.work-item p {
-	padding: 12px;
-	font-weight: bold;
-	color: #00e676;
-}
-
-footer {
-	margin-top: 60px;
-	padding: 40px 20px 30px;
-	text-align: center;
-}
-
-.footer-btn {
-	display: block;
-	width: fit-content;
-	margin: 0 auto 15px;
-	background: #00e676;
-	color: #0a0a0a;
-	padding: 12px 30px;
-	border-radius: 50px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 15px;
-	box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
-	transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.footer-btn:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
-}
-
-footer p {
-	color: #666;
-	font-size: 13px;
-	margin-top: 20px;
-}
-
-@media (max-width: 480px) {
-	h1 { font-size: 40px; }
-	h5 { font-size: 14px; }
-	.logo { height: 40px; }
-}
-
-@keyframes fadeIn {
-	from { opacity: 0; transform: translateY(20px); }
-	to { opacity: 1; transform: translateY(0); }
-}
-
-</style>
 </head>
 
 <body>
+
+<div id="preloader">
+	<img src="https://i.ibb.co/TqcjdJ2G/content.png" alt="جاري التحميل">
+</div>
 
 <nav>
 <a href="index.html"> الرئيسية</a>
@@ -200,11 +26,13 @@ footer p {
 <a href="pricing.html">الاسعار</a>
 </nav>
 
-<img src="https://i.ibb.co/Gf1L4Zm7/content.png" alt="DO2" class="logo">
+<img src="https://i.ibb.co/TqcjdJ2G/content.png" alt="DO2" class="logo">
 
 <h1><span class="highlight">مواقع احترافية</span></h1>
 
 <h5> ليش DO2 لاننا نقدم لك خدمات مقابل اسعار ترضيك ، التعاونية مع العميل اولاً🫱🏻‍🫲🏼</h5>
+
+<h5>👨‍💻 WEBSITE DESIGN</h5>
 
 <a href="https://wa.me/966540903064" class="cta-btn">ابدأ مشروعك الآن</a>
 
@@ -241,20 +69,51 @@ footer p {
 </div>
 
 <h2 class="section-title">إنجازاتنا</h2>
+<!-- بداية المتاجر -->
 
 <div class="container">
-	<div class="work-item">
-		<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500" alt="متجر SUN2">
-		<p>SUN2 - متجر ملابس</p>
-	</div>
-	<div class="work-item">
-		<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500" alt="كوفي ستب">
-		<p>ستب - كوفي</p>
-	</div>
-	<div class="work-item">
-		<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500" alt="مطعم BEST">
-		<p>BEST - مطعم</p>
-	</div>
+
+<div class="work-item">
+	<img src="https://i.ibb.co/n8skfmx2/IMG-3180.jpg" alt="a store" loading="lazy">
+	<p>𝐀 𝐬𝐭𝐨𝐫𝐞 متاجر</p>
+</div>
+<!-- نهاية المتاجر -->
+
+<!-- بداية الكوفي-->
+<div class="work-item">
+	<img src="https://i.ibb.co/7dkwDdwh/IMG-3179.jpg" alt="coffee" loading="lazy">
+	<p>𝐂𝐨𝐟𝐟𝐞𝐞 كوفي</p>
+</div>
+<!-- نهاية الكوفي -->
+
+<!-- بداية المطاعم-->
+<div class="work-item">
+	<img src="https://i.ibb.co/7JgsVvNF/IMG-3178.jpg" alt="restaurants" loading="lazy">
+	<p>Restaurants مطاعم</p>
+</div>
+<!-- نهاية المطاعم -->
+
+<!-- بداية الصيدليات-->
+<div class="work-item">
+	<img src="https://i.ibb.co/9HWtg6BQ/IMG-3182.jpg" alt="pharmacies" loading="lazy">
+	<p> 𝐏𝐡𝐚𝐫𝐦𝐚𝐜𝐢𝐞𝐬 صيدليات</p>
+</div>
+<!-- نهاية الصيدليات -->
+
+<!-- بداية الشركات -->
+<div class="work-item">
+	<img src="https://i.ibb.co/x4pZxb7/IMG-3181.jpg" alt="companies" loading="lazy">
+	<p>𝐂𝐨𝐦𝐩𝐚𝐧𝐢𝐞𝐬 شركات</p>
+</div>
+<!-- نهاية الشركات -->
+
+<!-- بداية السيرة الذاتيه -->
+<div class="work-item">
+	<img src="https://i.ibb.co/kV3WSvL7/IMG-3183.jpg" alt="biographt" loading="lazy">
+	<p>𝐁𝐢𝐨𝐠𝐫𝐚𝐩𝐡𝐭 سيرة ذاتية</p>
+</div>
+<!-- نهاية السيرة الذاتيه -->
+
 </div>
 
 <footer>
@@ -262,6 +121,10 @@ footer p {
 	<a href="mailto:info@do2.com" class="footer-btn">📧 تواصل عبر الايميل</a>
 	<p>جميع الحقوق محفوظة لدى DO2 © 2026</p>
 </footer>
+
+<a href="https://wa.me/966540903064" class="float-btn">💬</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>

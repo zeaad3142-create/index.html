@@ -3,236 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DO2 - باقاتنا</title>
+
+<meta name="description" content="أسعار وباقات تصميم المواقع من DO2 - باقات تبدأ من 500 ريال، تعديلات مجانية، وتوصيل رقم واتساب وتواصل مباشر">
+<meta name="keywords" content="اسعار تصميم مواقع, باقات مواقع الكترونية, تصميم موقع رخيص, DO2">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-nav {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	padding: 20px;
-	background: rgba(10, 10, 10, 0.7);
-	backdrop-filter: blur(10px);
-	position: sticky;
-	top: 0;
-	z-index: 10;
-}
-
-nav a {
-	color: #00e676;
-	text-decoration: none;
-	font-weight: bold;
-	transition: color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-	color: #ffffff;
-	transform: scale(1.1);
-}
-
-.container {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	margin-top: 30px;
-	flex-wrap: wrap;
-}
-
-.plan {
-	background: #111;
-	border-radius: 16px;
-	box-shadow: 0 4px 15px rgba(0, 230, 118, 0.2);
-	padding: 25px;
-	width: 260px;
-	text-align: center;
-	transition: transform 0.3s, box-shadow 0.3s;
-
-}
-
-.plan:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 8px 25px rgba(0, 230, 118, 0.35);
-
-}
-
-body {
-	background: #0a0a0a;
-	color: white;
-	text-align: center;
-	font-family: 'Tajawal', sans-serif;
-	padding: 40px 20px;
-	animation: fadeIn 1s ease;
-
-}
-
-.logo {
-	height: 55px;
-	margin-bottom: 10px;
-
-}
-
-h5 {
-	color: #999;
-	max-width: 500px;
-	margin: 15px auto;
-
-}
-
-h1 {
-	color: #00e676;
-	font-size: 65px;
-
-}
-
-.highlight {
-	color: #00e676;
-	text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
-
-}
-
-.cta-btn {
-	display: inline-block;
-	background: #00e676;
-	color: #0a0a0a;
-	padding: 14px 35px;
-	border-radius: 50px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 16px;
-	margin-top: 20px;
-	box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
-	transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-
-}
-
-.cta-btn:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
-	background: #ffffff;
-
-}
-
-/* تنسيق نموذج التواصل الجديد */
-#contactForm {
-	max-width: 350px;
-	margin: 60px auto 0;
-	display: flex;
-	flex-direction: column;
-	gap: 14px;
-
-}
-
-#contactForm input,
-#contactForm textarea {
-	background: #111;
-	border: 1px solid #333;
-	border-radius: 10px;
-	padding: 14px;
-	color: white;
-	font-family: 'Tajawal', sans-serif;
-	font-size: 15px;
-	outline: none;
-	transition: border-color 0.3s;
-
-}
-
-#contactForm input:focus,
-#contactForm textarea:focus {
-	border-color: #00e676;
-
-}
-
-#contactForm textarea {
-	min-height: 100px;
-	resize: vertical;
-
-}
-
-#contactForm button {
-	background: #00e676;
-	color: #0a0a0a;
-	border: none;
-	padding: 14px;
-	border-radius: 10px;
-	font-weight: bold;
-	font-size: 15px;
-	cursor: pointer;
-	transition: transform 0.3s, background 0.3s;
-
-}
-
-#contactForm button:hover {
-	transform: scale(1.03);
-	background: #ffffff;
-
-}
-
-footer {
-	margin-top: 60px;
-	padding: 40px 20px 30px;
-	text-align: center;
-
-}
-
-.footer-btn {
-	display: block;
-	width: fit-content;
-	margin: 0 auto 15px;
-	background: #00e676;
-	color: #0a0a0a;
-	padding: 12px 30px;
-	border-radius: 50px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 15px;
-	box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
-	transition: transform 0.3s, box-shadow 0.3s;
-
-}
-
-.footer-btn:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 30px rgba(0, 230, 118, 0.6);
-
-}
-
-footer p {
-	color: #666;
-	font-size: 13px;
-	margin-top: 20px;
-
-}
-
-hr {background: #111;
-	border-radius: 70px 70px 70px 3px;
-	box-shadow: 0 12px 20px rgba(0, 230, 100, 0.40);
-	padding: 14px;
-	width: 65px;
-	text-align: right;
-	
-
-}
-
-
-@media (max-width: 480px) {
-	h1 { font-size: 40px; }
-	h5 { font-size: 14px; }
-	.logo { height: 40px; }
-}
-
-@keyframes fadeIn {
-	from { opacity: 0; transform: translateY(20px); }
-	to { opacity: 1; transform: translateY(0); }
-}
-
-</style>
 </head>
-<!-- __________________________ -->
 
 <body>
+
+<div id="preloader">
+	<img src="https://i.ibb.co/TqcjdJ2G/content.png" alt="جاري التحميل">
+</div>
 
 <nav>
 <a href="index.html"> الرئيسية</a>
@@ -240,7 +26,7 @@ hr {background: #111;
 <a href="pricing.html">الاسعار</a>
 </nav>
 
-<img src="https://i.ibb.co/Gf1L4Zm7/content.png" alt="DO2" class="logo">
+<img src="https://i.ibb.co/TqcjdJ2G/content.png" alt="DO2" class="logo">
 
 <h1><span class="highlight">باقاتنا</span></h1>
 
@@ -248,75 +34,41 @@ hr {background: #111;
 
 <a href="https://wa.me/966540903064" class="cta-btn">ابدأ مشروعك الآن</a>
 
-	<div class="container">
-	
-<div class="plan">
-		
- <h2>الباقة التعريفية</h2>
-		 <h2>500 ريال </h2>
-		
-<p>موقع بصفحة واحدة+طريقة تواصل</p>
+<div class="container">
+	<div class="plan">
+		<h2>الباقة التعريفية</h2>
+		<h2>500 ريال </h2>
+		<p>موقع بصفحة واحدة+طريقة تواصل</p>
 		<p>10 تعديلات مجانية</p>
-
+	</div>
+	<div class="plan">
+		<h2>الباقة النصفية</h2>
+		<h2>799 ريال</h2>
+		<p>موقع+رقم واتساب+روابط تواصل + تعديلات مجانية لمدة اسبوع</p>
+	</div>
+	<div class="plan">
+		<h2> الباقة الاساسية </h2>
+		<h2> 999 ريال </h2>
+		<p> موقع متكامل + الرفع على الانترنت ومباشرة استقبال العملاء+ تعديلات مجانية لمدة شهر</p>
+	</div>
 </div>
-	
-<div class="plan">
-		
-	<h2>الباقة النصفية</h2>
-		  <h2>799 ريال</h2>
- 
-<p>موقع+رقم واتساب+روابط تواصل + تعديلات مجانية لمدة اسبوع</p>
-
-</div>
-	
-<div class="plan">
-	 <h2> الباقة الاساسية </h2>
-		  <h2> 999 ريال </h2>
-		
- <p> موقع متكامل + الرفع على الانترنت ومباشرة استقبال العملاء+ تعديلات مجانية لمدة شهر</p>
-
-</div>
-
-</div>
-
-<hr/>
 
 <form id="contactForm">
-	
 	<input type="text" id="nameInput" placeholder="اسمك">
-	
-	<textarea id="messageInput" placeholder="رسالتك"> </textarea>
-	
+	<textarea id="messageInput" placeholder="رسالتك"></textarea>
 	<button type="button" onclick="sendMessage()">إرسال عبر واتساب</button>
-
 </form>
 
 <footer>
-	
 	<a href="https://wa.me/966543443871" class="footer-btn">💬 تواصل عبر الواتساب</a>
-	
 	<a href="mailto:info@do2.com" class="footer-btn">📧 تواصل عبر الايميل</a>
-	
 	<p>جميع الحقوق محفوظة لدى DO2 © 2026</p>
-
 </footer>
 
-<script>
-function sendMessage() {
-    let name = document.getElementById('nameInput').value;
-    let message = document.getElementById('messageInput').value;
+<a href="https://wa.me/966540903064" class="float-btn">💬</a>
 
-    if (name === "" || message === "") {
-        alert("الرجاء تعبئة جميع الحقول");
-        return;
-    }
 
-    let fullMessage = "الاسم: " + name + " - الرسالة: " + message;
-    let whatsappURL = "https://wa.me/966543443871?text=" + encodeURIComponent(fullMessage);
-
-    window.open(whatsappURL);
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
