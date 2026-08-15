@@ -22,13 +22,6 @@ nav a:hover {
 	transform: scale(1.1);
 }
 
-nav a.active {
-    color: #ffffff;
-    border-bottom: 2px solid #00e676;
-    padding-bottom: 4px;
-}
-
-
 body {
 	background: #0a0a0a;
 	color: white;
@@ -70,27 +63,7 @@ h5 {
 .highlight {
 	color: #00e676;
 	text-shadow: 0 0 20px rgba(0, 230, 118, 0.6);
-
 }
-
-.section-title {
-    margin-top: 55px;
-    position: relative;
-    padding-top: 30px;
-}
-
-.section-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #00e676, transparent);
-    border-radius: 10px;
-}
-
 
 /* بطاقات الإحصائيات (الرئيسية) */
 .stat {
@@ -127,6 +100,9 @@ h5 {
 	width: 220px;
 	box-shadow: 0 4px 15px rgba(0, 230, 118, 0.2);
 	transition: transform 0.3s, box-shadow 0.3s;
+	display: block;
+	text-decoration: none;
+	color: inherit;
 }
 
 .work-item:hover {
@@ -341,19 +317,6 @@ footer p {
 	visibility: hidden;
 }
 
-.back-top {
-    left: auto;
-    right: 25px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.back-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-
 @keyframes pulse {
 	0%, 100% { transform: scale(1); opacity: 1; }
 	50% { transform: scale(1.15); opacity: 0.6; }
@@ -364,10 +327,46 @@ footer p {
 	h1 { font-size: 40px; }
 	h5 { font-size: 14px; }
 	.logo { height: 60px; }
+	.project-hero { margin-top: 20px; }
 }
 
 /* حركة الدخول */
 @keyframes fadeIn {
 	from { opacity: 0; transform: translateY(20px); }
 	to { opacity: 1; transform: translateY(0); }
+}
+
+/* صفحات تفاصيل المشاريع */
+.project-hero {
+	max-width: 700px;
+	margin: 40px auto 0;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 8px 25px rgba(0, 230, 118, 0.2);
+}
+
+.project-hero img {
+	width: 100%;
+	display: block;
+}
+
+.project-content {
+	max-width: 600px;
+	margin: 30px auto 0;
+}
+
+.project-content p {
+	line-height: 1.9;
+	color: #ccc;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.project-features {
+	max-width: 600px;
+	margin: 20px auto;
+	text-align: right;
+	line-height: 2.2;
+	color: #ccc;
+	padding-right: 10px;
 }
